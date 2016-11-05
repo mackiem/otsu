@@ -327,8 +327,8 @@ int main(int argc, char** argv) {
 
 			cv::Mat output_img;
 			cv::merge(output_channels, output_img);
-			cv::imshow(std::string(filename) + std::string("_texture_channels") + std::to_string(ch), output_img);
-			cv::imwrite(std::string(filename) + std::string("_texture_channels") + std::to_string(ch) + std::string(".jpg"), output_img);
+			cv::imshow(std::string(filename) + std::string("_texture_channels_") + std::to_string(ch), output_img);
+			cv::imwrite(std::string(filename) + std::string("_texture_channels_") + std::to_string(ch) + std::string(".jpg"), output_img);
 		}
 
 		switch (i) {
